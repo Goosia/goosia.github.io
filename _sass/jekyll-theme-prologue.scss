@@ -592,6 +592,7 @@
 						position: relative;
 						display: block;
 						font-size: 0.8em;
+						padding-left: 2.23em;
 
 						&:before {
 							position: absolute;
@@ -653,6 +654,9 @@
 		margin-left: 375px;
 		> section {
 			text-align: center;
+		}
+		> a[href$="disqus_thread"] {
+			padding: 0 20px;
 		}
 		> article {
 			text-align: left;
