@@ -17,6 +17,6 @@ layout: default
 	</article>
 
 	{%- include disqus.html -%}
-	<!-- {%- if page.comments -%} • <a href="{{- site.url -}}{{- page.url -}}#disqus_thread">0 Comments</a>{%- endif -%} -->
+	{%- if page.comments -%} • <p class="post-meta"><a href="{{- site.url -}}{{- page.url -}}#disqus_thread">0 Comments</a></p>{%- endif -%}
 
 </div>
