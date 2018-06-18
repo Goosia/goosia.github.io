@@ -14,7 +14,7 @@ comments: true
 <section>
 <h1>브랜치 (Branch)</h1>
 <ul>
- 	<li><a class="Selected" href="https://backlog.com/git-tutorial/kr/stepup/stepup1_1.html">브랜치란?
+ 	<li><a class="Selected" href="https://backlog.com/git-tutorial/kr/stepup/stepup1_1.html">브랜치란? 
 </a>여럿의 개발자가 동일한 소스코드를 충돌없이 처리할 수 있도록 물리적인 코드의 분할을 해주는 기능
 저장소 최초 생성시 master 브랜치가 기본 생성됨.</li>
  	<li><a href="https://backlog.com/git-tutorial/kr/stepup/stepup1_2.html">브랜치 만들기</a>
