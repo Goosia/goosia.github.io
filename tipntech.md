@@ -4,6 +4,7 @@ subtitle: 깨알정보
 layout: "page"
 icon: fa-bolt
 order: 3
+comments: true
 ---
 
 # 오늘의 팁
