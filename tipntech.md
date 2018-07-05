@@ -19,3 +19,4 @@ order: 3
 # 깃(Git)
 * Visual Studio Code 사용 중에 깃헙에 소스를 동기화 할때 항상 유저 아이디와 암호를 입력 받는데 인증 정보를 저장하는 방법은 : 깃 루트에서 git config credential.helper store 입력 후 로그인 하면 이후 부터는 자동 인증 된다.
 ​
+{%- include disqus.html -%}
