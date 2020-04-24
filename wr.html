@@ -41,7 +41,7 @@
 		hour -= 10;
 	}
 
- 	done = (week - 1) * 20 + (hour + min / 60 + sec / 360) * index;
+ 	done = (week - 1) * 20 + (hour + min / 60 + sec / 3600) * index;
 
 	document.getElementById("percent").innerHTML = done.toFixed(2);
 
