@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  현재 공정율 : <span id="percent">0</span>%
+ </body>
+ <script>
+	var date = new Date();
+	var week = date.getDay();
+	var hour = date.getHours();
+	var min = date.getMinutes();
+	var sec = date.getSeconds();
+	var done = 0;
+	var index = 8/20;
+	if (week > 5)
+	{
+		week = 5;
+	}
+
+	if (hour < 10)
+	{
+		hour = 0;
+	}
+	else if (hour > 19)
+	{
+		hour = 8;
+	}
+	else if (hour >= 10 && hour <= 12)
+	{
+		hour -= 9;
+	}
+	else if (hour >= 13 && hour >= 18)
+	{
+		hour -= 10;
+	}
+
+ 	done = (week - 1) * 20 + (hour + min / 60 + sec / 360) * index;
+
+	document.getElementById("percent").innerHTML = done.toFixed(2);
+
+ </script>
+</html>
