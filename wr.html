@@ -10,7 +10,7 @@
  </head>
  <body>
   현재 공정율 : <span id="percent">0</span>%
-  <img src="">
+  <img id="anim" src="/assets/images/rate/100.gif" />
  </body>
  <script>
 	var date = new Date();
@@ -50,8 +50,20 @@
 	}
 
  	done = (week - 1) * 20 + (hour + min / 60 + sec / 3600) * index;
+	
+	var prefix = "/assets/images/rate/";
+	var suffix = ".gif";
+	if (done <= 10) anim = prefix + "10" + suffix;
+	else if (done <= 20) anim = prefix + "20" + suffix;
+	else if (done <= 30) anim = prefix + "30" + suffix;
+	else if (done <= 40) anim = prefix + "40" + suffix;
+	else if (done <= 60) anim = prefix + "60" + suffix;
+	else if (done <= 80) anim = prefix + "80" + suffix;
+	else if (done <= 90) anim = prefix + "90" + suffix;
+	else if (done <= 100) anim = prefix + "100" + suffix;
 
 	document.getElementById("percent").innerHTML = done.toFixed(2);
+	document.getElementById("anim").src = anim;
 
  </script>
 </html>
