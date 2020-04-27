@@ -2,15 +2,25 @@
 <html lang="ko">
  <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Generator" content="EditPlus®">
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
   <title>오늘의 공정율</title>
+  <style>
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+ </style>
  </head>
- <body>
+ <body style="text-align: center;">
+  <img id="anim" src="/assets/images/rate/100.gif" class="center" />
   현재 공정율 : <span id="percent">0</span>%
-  <img id="anim" src="/assets/images/rate/100.gif" />
  </body>
  <script>
 	var date = new Date();
