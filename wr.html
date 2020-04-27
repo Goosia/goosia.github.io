@@ -10,6 +10,7 @@
  </head>
  <body>
   현재 공정율 : <span id="percent">0</span>%
+  <img src="">
  </body>
  <script>
 	var date = new Date();
@@ -28,9 +29,11 @@
 	{
 		hour = 0;
 	}
-	else if (hour > 19)
+	else if (hour > 18)
 	{
 		hour = 8;
+		min = 0;
+		sec = 0;
 	}
 	else if (hour >= 10 && hour <= 12)
 	{
@@ -39,6 +42,11 @@
 	else if (hour >= 13 && hour <= 18)
 	{
 		hour -= 10;
+		if (hour == 18)
+		{
+			min = 0;
+			sec = 0;
+		}
 	}
 
  	done = (week - 1) * 20 + (hour + min / 60 + sec / 3600) * index;
